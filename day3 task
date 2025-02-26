@@ -1,0 +1,18 @@
+package task;
+public class Person{
+    String name;
+    int age;
+    public void introduce(String name,int age){
+        this.name = name;
+        this.age=age;
+        
+        System.out.print(name);
+        System.out.print(age);
+    }
+    public static void main(String[]args){
+        Person a1=new Person();
+        a1.introduce("yuvaraj",45);
+    
+        
+    }
+}
