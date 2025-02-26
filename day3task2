@@ -1,0 +1,24 @@
+package task;
+public class Book{
+    public void Book(){
+       // private String author;
+       // private String title;
+       // System.out.println();
+        String title;
+        String author;
+        System.out.println("title");
+        System.out.println("author");
+        
+    }
+   Public void Book(String title,String author){
+        this.title=title;
+        this.author=author;
+    }
+    public static void main(String[]args){
+        Book books = new Book();
+        Book books2 = new Book();
+       // this.book("Kanguvaa","siruthai sivaa");
+        
+    }
+  //  private void Book("kanguva","siva");
+}
