@@ -1,0 +1,27 @@
+public class  Salary{
+  int id;
+  int Salary;
+
+
+
+ public void SetSalary(int myid, int mySalary){
+              if(mySalary<5000){
+                System.out.print("you had a error on credit");
+              }
+              else{
+                this.Salary=mySalary;
+                this.id=myid;
+              }
+}
+public int getSalary(){
+  return Salary;
+}
+
+
+
+    public static void main(String[] args) {
+      Salary ss = new Salary();
+      ss.SetSalary(10,10000);
+      System.out.println(ss.getSalary());
+  }
+}
