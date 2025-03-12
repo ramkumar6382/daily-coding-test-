@@ -1,0 +1,29 @@
+package Sampless;
+class Vehicle {
+    void start() {
+        System.out.println(" how to start Vehicle ");
+    }
+}class Car extends Vehicle {
+    @Override
+    void start() {
+        System.out.println("Car is start by key button");
+    }
+}
+class Bike extends Vehicle {
+    @Override
+    void start() {
+        System.out.println("Bike is starting with kicker");
+    }
+}
+public class Sample22 {
+    public static void main(String[] args) {
+        Vehicle d = new Vehicle(); 
+
+       d = new Vehicle();
+       d.start();
+       d = new Car(); 
+       d.start(); 
+       d = new Bike(); 
+       d.start(); 
+    }
+}
