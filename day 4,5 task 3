@@ -1,0 +1,29 @@
+package Sampless;
+public class Battery {
+	int capacity;
+	
+	public int getcap(int cap) {
+		this.capacity=cap;
+		return cap;
+	}
+	 public void setcap() {
+		 System.out.println("The Mobile capacity is"+capacity);
+	 }
+}
+
+class phone{
+	Battery b;
+	
+	public phone(int cap){
+		b = new Battery();
+		b.getcap(cap);
+	}
+	public void show() {
+		b.setcap();
+	}
+	public static void main(String[] args) {
+		phone m = new phone(9000);
+		m.show();
+	}
+	
+}
