@@ -1,0 +1,24 @@
+package Sampless;
+interface Playable {
+ void play(); 
+}
+ class Guitar implements Playable {
+ @Override
+ public void play() {
+     System.out.println("lets play thr guitar guys");
+ }
+}
+ class Piano implements Playable {
+ @Override
+ public void play() {
+     System.out.println("lets play the pianoo guyssss");
+ }
+}
+public class Sample22 {
+    public static void main(String[] args) {
+        Playable myGuitar = new Guitar();
+        Playable myPiano = new Piano();
+        myGuitar.play();  
+        myPiano.play();   
+    }
+}
