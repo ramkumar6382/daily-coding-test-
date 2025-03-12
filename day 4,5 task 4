@@ -1,0 +1,49 @@
+package Sampless;
+public class Task4{
+public static void main(String[] args) {
+     Computer myComputer = new Computer("Assus","tuf ","i11");
+     myComputer.showDetails();
+     myComputer.executeTask();
+     Runnable task = new Runnable() {
+         @Override
+         public void run() {
+             System.out.println("Unknown  class during running task...");
+         }
+     };
+     new Thread(task).start();
+     }
+}
+class Computer {
+ private String brand;
+ private String model;
+private String processor;
+
+  Computer(String brand,String model, String processor) {
+     this.brand = brand;
+     this.model=model;
+     this.processor = processor;
+ }
+  void showDetails() {
+     System.out.println("Computer Brand: " + brand);
+     System.out.println("Computer model: " + model);
+     System.out.println("Processor: " + processor);
+ }
+  void executeTask() {
+     class Task {
+         public void makeTask() {
+             System.out.println("Local inner class performing task...");
+         }
+     }
+     Task task = new Task();
+     task.makeTask();
+ }
+ class Processor {
+     private String processorType;
+     public Processor(String processorType) {
+         this.processorType = processorType;
+     }
+     void showProcessor() {
+         System.out.println("Processor Type: " + processorType);
+     }
+ }
+}
